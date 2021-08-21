@@ -1,0 +1,15 @@
+<p>List of Servers</p>
+<!--below is an example of property binding-->
+<button [disabled]="showbutton" (click)="showServer()">Show Servers</button>
+<!--below is an example of string manipulation-->
+<p>{{name}}</p>
+<p [innerHTML]="name" ></p>
+<ul [style.display]="showserver">
+  <li>
+    <app-server></app-server>
+    <app-success></app-success>
+  </li>
+  <li>
+    <app-server></app-server>
+  </li>
+</ul>
