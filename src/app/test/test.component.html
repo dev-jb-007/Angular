@@ -1,0 +1,10 @@
+<!--<input type="text" #myInput (input)="name=myInput.value" [value]="name" [style.backgroundColor]="myInput.value.length>0?'green':'red'">-->
+<!--{{name}}-->
+<!--<input type="text" [class.danger]="isCorrect" #myInput (input)="myInput.value.length>0?isCorrect=true:isCorrect=false">-->
+<!--<input type="text" [(ngModel)]="name" [class.danger]="isCorrect">-->
+<!--<input type="checkbox" [(ngModel)]="isCorrect">-->
+<!--{{name}}-->
+
+<!--<input type="text" #myInput (click)="username=$event.value">-->
+{{username}}
+<button type="button" [disabled]="username.length>0?false:true" (click)="username=''">Submit</button>

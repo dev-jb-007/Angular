@@ -3,6 +3,8 @@
 <button [disabled]="showbutton" (click)="showServer()">Show Servers</button>
 <!--below is an example of string manipulation-->
 <p>{{name}}</p>
+<input type="text" (input)="getServerName($event)" class="form-control">
+<div>{{servername}}</div>
 <p [innerHTML]="name" ></p>
 <ul [style.display]="showserver">
   <li>

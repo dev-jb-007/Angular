@@ -10,8 +10,10 @@ import { Component, OnInit } from '@angular/core';
 export class ServersComponent implements OnInit {
   showserver: string = 'none';
   showbutton:boolean=true;
+  servername:string='';
   name:string='Dev Manish Patel'
   showServer(){
+
     if(this.showserver ==='block')
     {
       this.showserver='none';
@@ -20,6 +22,9 @@ export class ServersComponent implements OnInit {
       this.showserver='block';
     }
 
+  }
+  getServerName(event){
+    this.servername=event.target.value;
   }
   constructor() {
     setTimeout(()=>{
