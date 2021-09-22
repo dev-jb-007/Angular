@@ -1,0 +1,12 @@
+<div *ngIf="displayName;then trueCondition;else falseCondition">
+
+</div>
+
+<ng-template #trueCondition>
+    <p>My Name is Dev</p>
+    <button (click)="displayName=false">Click to hide name</button>
+</ng-template>
+<ng-template #falseCondition>
+    <p>Click The Button to Display Name</p>
+    <button (click)="displayName=true">Click to see name</button>
+</ng-template>

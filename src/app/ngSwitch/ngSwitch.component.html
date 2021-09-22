@@ -1,0 +1,15 @@
+<input type="text" #myInput (input)="color=myInput.value">
+<div [ngSwitch]="color">
+    <p *ngSwitchCase="'red'">
+        Hi i am red
+    </p>
+    <p *ngSwitchCase="'blue'">
+        Hi i am blue
+    </p>
+    <p *ngSwitchCase="'green'">
+        Hi i am green
+    </p>
+    <p *ngSwitchDefault>
+        No color Selected
+    </p>
+</div>

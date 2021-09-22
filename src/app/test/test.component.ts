@@ -9,6 +9,7 @@ export class TestComponent{
   username:string ='';
   isCorrect:boolean=false;
   changeName(name){
+    this.isCorrect=true;
     this.name=name;
   }
 }

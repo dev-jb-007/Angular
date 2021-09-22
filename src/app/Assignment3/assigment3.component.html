@@ -1,0 +1,8 @@
+<button (click)="buttonClicked()"> Click Me</button>
+<div *ngIf="displayDetails">
+    <p>Secret Password=Tuna</p>
+</div>
+
+<div *ngFor="let click of clicks;index as i">
+    <p [ngStyle]="{backgroundColor:(i<5)?'none':'blue'}" [ngClass]="{text:(i>=5)}">{{click}}</p>
+</div>

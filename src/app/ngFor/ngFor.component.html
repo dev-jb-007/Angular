@@ -1,0 +1,14 @@
+<div *ngFor="let color of colors">
+    {{color}}
+</div>
+
+<!-- Applying ngFor in ngStyle property binding -->
+<div *ngFor="let color of colors">
+    <p [ngStyle]="{backgroundColor:color}">Hi i am {{color}}</p>
+</div>
+<!-- Integrating Index -->
+<div *ngFor="let color of colors;index as i">
+    <div>
+        {{(i%2==0)?'Even':'Odd'}}
+    </div>
+</div>

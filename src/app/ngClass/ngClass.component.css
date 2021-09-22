@@ -1,0 +1,9 @@
+.online{
+    background-color: green;
+}
+.fontStyle{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-size: 20px;
+    transition: 0.3s;
+}
