@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, ViewChild } from "@angular/core";
 @Component({
   selector:'app-test',
   templateUrl:'test.component.html',
@@ -12,4 +12,11 @@ export class TestComponent{
     this.isCorrect=true;
     this.name=name;
   }
+
+  //View Child
+  @ViewChild('InputServerName') servername;
+  showName(){
+    console.log(this.servername);
+  }
 }
+

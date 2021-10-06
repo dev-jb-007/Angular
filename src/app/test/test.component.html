@@ -1,10 +1,15 @@
 <!--<input type="text" #myInput (input)="name=myInput.value" [value]="name" [style.backgroundColor]="myInput.value.length>0?'green':'red'">-->
 <!--{{name}}-->
 <!--<input type="text" [class.danger]="isCorrect" #myInput (input)="myInput.value.length>0?isCorrect=true:isCorrect=false">-->
-<input type="text" [(ngModel)]="name" [class.danger]="name.length>0?true:false">
+<!-- <input type="text" [(ngModel)]="name" [class.danger]="name.length>0?true:false"> -->
 <!--<input type="checkbox" [(ngModel)]="isCorrect">-->
 <!--{{name}}-->
 
-<input type="text" #myInput (input)="username=myInput.value">
+<!-- <input type="text" #myInput (input)="username=myInput.value"> -->
 {{username}}
-<button type="button" [disabled]="username.length>0?false:true" (click)="username=''">Submit</button>
+<!-- <button type="button" [disabled]="username.length>0?false:true" (click)="username=''">Submit</button> -->
+
+
+<!-- Using ViewChild -->
+<input type="text" name="server-name" id="server-name" #InputServerName>
+<button (click)="showName()">Show</button>
