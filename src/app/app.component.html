@@ -14,4 +14,14 @@
   <hr>
   <app-assignment3></app-assignment3> -->
 <!-- </div> -->
-<app-test></app-test>
+<!--<app-test></app-test>-->
+<!--<app-ngtemplate></app-ngtemplate>-->
+<!--<app-ng-template-outlet></app-ng-template-outlet>-->
+<!--<app-constructor [name]="name" name="Mukti"></app-constructor>-->
+<!--<app-constructor [name]="name" name="Manish"></app-constructor>-->
+<!--<p>{{time}}</p>-->
+
+
+<input type="text" placeholder="Name" #nameInput>
+<app-on-change [name]="name"></app-on-change>
+<button (click)="name=nameInput.value">Submit</button>

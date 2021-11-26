@@ -7,6 +7,7 @@ import { Component, ViewChild } from "@angular/core";
 export class TestComponent{
   name:string ='';
   username:string ='';
+  displayName:boolean=true;
   isCorrect:boolean=false;
   changeName(name){
     this.isCorrect=true;

@@ -13,6 +13,11 @@ import { ngStyleComponent } from './ngStyle/ngStyle.component';
 import { ngClassComponent } from './ngClass/ngClass.component';
 import { ngForComponent } from './ngFor/ngFor.component';
 import { assignment3Component } from './Assignment3/assignment3.component';
+import {RouterModule} from "@angular/router";
+import {TemplateComponent} from "./ngtemplate/ngtemplate.component";
+import { NgTemplateOutletComponent } from './ng-template-outlet/ng-template-outlet.component';
+import { ConstructorComponent } from './constructor/constructor.component';
+import { OnChangeComponent } from './on-change/on-change.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,11 +31,16 @@ import { assignment3Component } from './Assignment3/assignment3.component';
     ngStyleComponent,
     ngClassComponent,
     ngForComponent,
-    assignment3Component
+    assignment3Component,
+    TemplateComponent,
+    NgTemplateOutletComponent,
+    ConstructorComponent,
+    OnChangeComponent
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    RouterModule
   ],
   providers: [],
   bootstrap: [AppComponent]

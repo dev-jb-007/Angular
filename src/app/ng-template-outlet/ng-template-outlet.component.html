@@ -1,0 +1,12 @@
+<ng-template #brand let-data>
+  <div>
+    <h2>HomeStore</h2>
+    <p>{{ data.name }}</p>
+    <p>{{ data.age }}</p>
+<!--    <p>{{ data.value }}</p>-->
+  </div>
+</ng-template>
+<hr>
+<section>
+  <section *ngTemplateOutlet="brand;context:{$implicit:history}"></section>
+</section>

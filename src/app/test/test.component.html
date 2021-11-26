@@ -13,3 +13,11 @@
 <!-- Using ViewChild -->
 <input type="text" name="server-name" id="server-name" #InputServerName>
 <button (click)="showName()">Show</button>
+<ng-container>
+  <p>Enter your name here</p>
+</ng-container>
+
+
+<ng-template [ngIf]="displayName">
+  <p>Enter your name here</p>
+</ng-template>
